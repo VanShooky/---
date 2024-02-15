@@ -1,4 +1,5 @@
 import numpy as np
+from lab import print_matrix
 
 # 1.1
 
@@ -18,12 +19,6 @@ print("Результат вычислений:", result)
 
 # 1.5 вектор и матрица
 
-def print_matrix(matrix):
-    for row in matrix:
-        for element in row:
-            print(element, end=" ")
-        print()
-
 vctr = np.array([1,2,3,4,5])
 # print("Вектор: ", vctr)
 
@@ -31,12 +26,12 @@ matrix = [ [1, 2, 3, 4, 5],
         [6, 7, 8, 9, 10],
         [11, 12, 13, 14, 15]]
 
-# print_matrix(matrix)
+print_matrix(matrix)
 
 # print(matrix[2])
 # print(matrix[1][3])
 
-matrix = np.append(matrix,[[10,10,10,10,10]], 0)
+matrix = np.insert(matrix,[2],[[10,10,10,10,10]], 0)
 # print_matrix(matrix)
 
 matrix = np.insert(matrix,[5],[[1],[2],[3],[4]], 1)
