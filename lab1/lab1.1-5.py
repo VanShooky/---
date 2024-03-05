@@ -32,15 +32,15 @@ print_matrix(matrix)
 # print(matrix[1][3])
 
 matrix = np.insert(matrix,[2],[[10,10,10,10,10]], 0)
-# print_matrix(matrix)
+print_matrix(matrix)
 
 matrix = np.insert(matrix,[5],[[1],[2],[3],[4]], 1)
-# print_matrix(matrix)
+print_matrix(matrix)
 
 matrix = np.delete(matrix,[3],0)
-# print_matrix(matrix)
+print_matrix(matrix)
 
 matrix = np.delete(matrix,[5],1)
-# print_matrix(matrix)
+print_matrix(matrix)
 
 

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def main():
-    x = np.arange(0, 6.28, 0.1)
+    x = np.arange(-6, 6, 0.1)
     y = np.sin(x)
 
     fig = plt.figure()
@@ -14,10 +14,10 @@ def main():
     ax.set_xlabel('x')
     ax.set_ylabel('y')
 
-    ax.grid(visible=True, color='gray', linestyle='-', linewidth=0.5)
+    # ax.grid(visible=True, color='gray', linestyle='-', linewidth=0.5)
 
-    ax.set_xticks(np.linspace(0, 7, 10))
-    ax.set_yticks(np.linspace(y.min(), y.max(), 10))
+    # ax.set_xticks(np.linspace(0, 7, 10))
+    # ax.set_yticks(np.linspace(y.min(), y.max(), 10))
 
     plt.show()
     fig.savefig('sin(x).tiff')
