@@ -1,13 +1,13 @@
 import numpy as np
 
-def func3(x,g):
+# 3
+def func1(x,g):
     return x/(g**2) * np.exp(-((x**2)/2*(g**2)))
 
-def func5(x,g):
-    a=0
-    b=0
+# 5
+def func2(x,a,b):
     return (a/2)*np.exp(-a*(np.abs(x-b)))
 
-def func6(x,g):
-    l = 5
+# 6
+def func3(x,l):
     return l*np.exp(-l*x)
